@@ -1,0 +1,27 @@
+version: "3.1"
+
+stories:
+- story: test complete planning start
+  steps:
+    - user: |
+        hello
+      intent: greet
+    - action: utter_greet
+    - user: |
+        I want to plan an eco friendly trip
+      intent: plan_trip
+    - action: action_collect_missing_trip_info
+
+- story: test carbon estimate request
+  steps:
+    - user: |
+        calculate the carbon footprint
+      intent: ask_carbon_footprint
+    - action: action_calculate_carbon
+
+- story: test human handover
+  steps:
+    - user: |
+        I want to speak to a human advisor
+      intent: request_human_handover
+    - action: action_package_handover_context

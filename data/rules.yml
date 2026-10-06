@@ -1,0 +1,93 @@
+version: "3.1"
+
+rules:
+- rule: Say hello
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- rule: Say goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- rule: Thank response
+  steps:
+    - intent: thank
+    - action: utter_thank
+
+- rule: Privacy explanation
+  steps:
+    - intent: ask_privacy
+    - action: utter_privacy
+
+- rule: Start trip planning
+  steps:
+    - intent: plan_trip
+    - action: action_collect_missing_trip_info
+
+- rule: Continue after destination
+  steps:
+    - intent: provide_destination
+    - action: action_collect_missing_trip_info
+
+- rule: Continue after origin
+  steps:
+    - intent: provide_origin
+    - action: action_collect_missing_trip_info
+
+- rule: Continue after dates
+  steps:
+    - intent: provide_dates
+    - action: action_collect_missing_trip_info
+
+- rule: Continue after budget
+  steps:
+    - intent: provide_budget
+    - action: action_collect_missing_trip_info
+
+- rule: Continue after sustainability level
+  steps:
+    - intent: provide_sustainability_preference
+    - action: action_collect_missing_trip_info
+
+- rule: Transport recommendation
+  steps:
+    - intent: ask_transport_options
+    - action: action_fetch_transport_options
+
+- rule: Carbon calculation
+  steps:
+    - intent: ask_carbon_footprint
+    - action: action_calculate_carbon
+
+- rule: Accommodation recommendation
+  steps:
+    - intent: ask_accommodation
+    - action: action_fetch_hotels
+    - action: action_rank_eco_options
+
+- rule: Cultural experience recommendation
+  steps:
+    - intent: ask_cultural_experiences
+    - action: action_recommend_cultural_experiences
+
+- rule: Offset recommendation
+  steps:
+    - intent: ask_carbon_offset
+    - action: action_recommend_offsets
+
+- rule: Human handover
+  steps:
+    - intent: request_human_handover
+    - action: action_package_handover_context
+
+- rule: Out of scope
+  steps:
+    - intent: out_of_scope
+    - action: utter_out_of_scope
+
+- rule: Low confidence fallback
+  steps:
+    - intent: nlu_fallback
+    - action: action_two_stage_clarification

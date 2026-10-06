@@ -1,0 +1,66 @@
+version: "3.1"
+
+stories:
+- story: Full eco city break planning path
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: plan_trip
+    - action: action_collect_missing_trip_info
+    - intent: provide_destination
+      entities:
+        - destination: "Berlin"
+    - slot_was_set:
+        - destination: "Berlin"
+    - action: action_collect_missing_trip_info
+    - intent: provide_origin
+      entities:
+        - origin: "London"
+    - slot_was_set:
+        - origin: "London"
+    - action: action_collect_missing_trip_info
+    - intent: provide_dates
+      entities:
+        - date: "12 July to 16 July"
+    - slot_was_set:
+        - travel_dates: "12 July to 16 July"
+    - action: action_collect_missing_trip_info
+    - intent: provide_budget
+      entities:
+        - budget: "mid-range"
+    - slot_was_set:
+        - budget: "mid-range"
+    - action: action_collect_missing_trip_info
+    - intent: provide_sustainability_preference
+      entities:
+        - sustainability_level: "high"
+    - slot_was_set:
+        - sustainability_level: "high"
+    - action: action_collect_missing_trip_info
+
+- story: User asks for carbon estimate only
+  steps:
+    - intent: ask_carbon_footprint
+    - action: action_calculate_carbon
+    - intent: ask_transport_options
+    - action: action_fetch_transport_options
+
+- story: User asks for human handover after recommendations
+  steps:
+    - intent: plan_trip
+    - action: action_collect_missing_trip_info
+    - intent: request_human_handover
+    - action: action_package_handover_context
+
+- story: Accommodation path
+  steps:
+    - intent: ask_accommodation
+    - action: action_fetch_hotels
+    - action: action_rank_eco_options
+
+- story: Fallback then clarification then handover
+  steps:
+    - intent: nlu_fallback
+    - action: action_two_stage_clarification
+    - intent: request_human_handover
+    - action: action_package_handover_context

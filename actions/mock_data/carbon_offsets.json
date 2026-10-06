@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Gold Standard renewable energy contribution",
+    "standard": "Gold Standard style verification",
+    "project_type": "Renewable energy",
+    "region": "Global South",
+    "note": "Use only after first reducing avoidable emissions; check current verification before purchase."
+  },
+  {
+    "name": "Verified reforestation and biodiversity fund",
+    "standard": "VCS style verification",
+    "project_type": "Nature-based restoration",
+    "region": "Mixed regions",
+    "note": "Suitable as a contribution, but users should review permanence and additionality claims."
+  },
+  {
+    "name": "Clean cooking climate project",
+    "standard": "Gold Standard style verification",
+    "project_type": "Household energy efficiency",
+    "region": "Africa/Asia",
+    "note": "Can combine climate and social benefits; project documentation should be checked."
+  }
+]

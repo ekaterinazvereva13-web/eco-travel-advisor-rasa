@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Community-led Berlin street art walk",
+    "city": "Berlin",
+    "duration": "2 hours",
+    "price_level": "budget",
+    "community_benefit": "Local guides paid directly",
+    "accessibility": "Step-free route available",
+    "description": "A walking tour led by local artists, avoiding coach transport and supporting neighbourhood creators."
+  },
+  {
+    "name": "Berlin repair caf\u00e9 and circular design visit",
+    "city": "Berlin",
+    "duration": "3 hours",
+    "price_level": "budget",
+    "community_benefit": "Supports circular economy volunteers",
+    "accessibility": "Indoor accessible venue",
+    "description": "A low-carbon cultural visit focused on reuse, repair and community design practice."
+  },
+  {
+    "name": "Barcelona local food market workshop",
+    "city": "Barcelona",
+    "duration": "3 hours",
+    "price_level": "mid-range",
+    "community_benefit": "Works with independent market traders",
+    "accessibility": "Accessible on request",
+    "description": "Small-group food culture session with local suppliers and seasonal produce."
+  },
+  {
+    "name": "Lisbon neighbourhood craft walk",
+    "city": "Lisbon",
+    "duration": "2.5 hours",
+    "price_level": "budget",
+    "community_benefit": "Supports independent craft makers",
+    "accessibility": "Some steep streets; alternative route available",
+    "description": "A guided experience introducing local craft producers and low-impact walking routes."
+  },
+  {
+    "name": "Edinburgh community heritage trail",
+    "city": "Edinburgh",
+    "duration": "2 hours",
+    "price_level": "budget",
+    "community_benefit": "Donation supports local heritage group",
+    "accessibility": "Partial step-free alternative",
+    "description": "A heritage-focused walking route designed with a local community organisation."
+  }
+]
