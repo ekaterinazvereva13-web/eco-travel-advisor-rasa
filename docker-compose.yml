@@ -1,0 +1,31 @@
+services:
+  rasa:
+    image: rasa/rasa:3.6.20-full
+    ports:
+      - "5005:5005"
+    volumes:
+      - ./:/app
+    command: run --enable-api --cors "*" --debug
+    depends_on:
+      - action_server
+    env_file:
+      - .env
+
+  action_server:
+    image: rasa/rasa-sdk:3.6.2
+    ports:
+      - "5055:5055"
+    volumes:
+      - ./actions:/app/actions
+    command: start --actions actions
+    env_file:
+      - .env
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - rasa

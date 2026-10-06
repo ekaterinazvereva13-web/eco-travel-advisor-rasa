@@ -1,0 +1,12 @@
+{
+  "emission_factors_kg_per_passenger_km": {
+    "flight": 0.18,
+    "car": 0.12,
+    "coach": 0.035,
+    "train": 0.028,
+    "public_transport": 0.045,
+    "cycling": 0.0,
+    "walking": 0.0
+  },
+  "note": "Prototype factors for comparison only. Replace with verified carbon API factors for final audited use."
+}

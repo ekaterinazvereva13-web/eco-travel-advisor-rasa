@@ -1,0 +1,206 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - hey
+    - good morning
+    - good afternoon
+    - can you help me plan a trip?
+    - I need travel planning help
+
+- intent: goodbye
+  examples: |
+    - goodbye
+    - bye
+    - see you later
+    - that is all
+    - end chat
+
+- intent: affirm
+  examples: |
+    - yes
+    - yes please
+    - correct
+    - that sounds good
+    - exactly
+    - please do
+
+- intent: deny
+  examples: |
+    - no
+    - no thanks
+    - not really
+    - I do not want that
+    - cancel
+
+- intent: thank
+  examples: |
+    - thanks
+    - thank you
+    - that helps
+    - much appreciated
+
+- intent: plan_trip
+  examples: |
+    - I want to plan an eco friendly trip
+    - help me plan a sustainable holiday
+    - find me a low carbon city break
+    - I need an eco travel itinerary
+    - can you plan a responsible tourism trip for me?
+    - I want sustainable travel recommendations
+    - build a green travel plan
+    - create a carbon conscious travel plan
+
+- intent: provide_destination
+  examples: |
+    - I want to go to [Berlin](destination)
+    - destination is [Barcelona](destination)
+    - I am visiting [Lisbon](destination)
+    - plan for [Edinburgh](destination)
+    - [Paris](destination)
+    - [Amsterdam](destination) would be good
+    - we are going to [Rome](destination)
+    - the destination is [Copenhagen](destination)
+
+- intent: provide_origin
+  examples: |
+    - I am travelling from [London](origin)
+    - from [Manchester](origin)
+    - my origin is [Birmingham](origin)
+    - leaving from [Leeds](origin)
+    - start in [Glasgow](origin)
+
+- intent: provide_dates
+  examples: |
+    - from [12 July to 16 July](date)
+    - [next weekend](date)
+    - [15 August](date)
+    - for [three nights](date)
+    - [10 to 14 September](date)
+    - [two days](date)
+    - [in October](date)
+
+- intent: provide_budget
+  examples: |
+    - my budget is [£500](budget)
+    - around [800 pounds](budget)
+    - [budget](budget)
+    - [mid-range](budget)
+    - [premium](budget)
+    - I can spend [1000 euros](budget)
+    - keep it cheap
+    - I want a low cost trip
+
+- intent: provide_travelers
+  examples: |
+    - it is for [2](number) people
+    - [1](number) traveller
+    - we are [4](number) people
+    - for [3](number) travellers
+    - two of us
+
+- intent: provide_sustainability_preference
+  examples: |
+    - I want the [lowest carbon](sustainability_level) option
+    - make sustainability [high](sustainability_level) priority
+    - I prefer a [balanced](sustainability_level) plan
+    - choose [medium](sustainability_level) sustainability
+    - [price first](sustainability_level)
+    - sustainability can be [low](sustainability_level)
+    - carbon reduction is very important
+    - I care most about the environment
+
+- intent: ask_transport_options
+  examples: |
+    - what transport should I use?
+    - compare transport options
+    - should I take a train or flight?
+    - show low carbon transport
+    - find public transport options
+    - is the train better than flying?
+
+- intent: ask_accommodation
+  examples: |
+    - recommend eco hotels
+    - find sustainable accommodation
+    - show green hotels
+    - where should I stay?
+    - I need an eco certified hotel
+
+- intent: ask_cultural_experiences
+  examples: |
+    - suggest local cultural experiences
+    - what community activities can I do?
+    - show ethical local experiences
+    - recommend sustainable activities
+    - I want activities that support local communities
+
+- intent: ask_carbon_footprint
+  examples: |
+    - calculate the carbon footprint
+    - how much CO2 will this trip emit?
+    - estimate emissions for my trip
+    - what is the carbon impact?
+    - compare carbon for [flight](transport_mode) and [train](transport_mode)
+    - carbon footprint for [coach](transport_mode)
+    - emissions by [car](transport_mode)
+
+- intent: ask_carbon_offset
+  examples: |
+    - suggest carbon offsets
+    - how can I offset my trip?
+    - find verified offset programmes
+    - what climate contribution can I make?
+    - show carbon offset options
+
+- intent: request_human_handover
+  examples: |
+    - I want to speak to a human advisor
+    - transfer me to a travel expert
+    - this is complex, hand me over
+    - can a person help me?
+    - I need personalised consultation
+    - human advisor please
+
+- intent: ask_privacy
+  examples: |
+    - how do you use my data?
+    - what about privacy?
+    - do you store my location?
+    - is this GDPR compliant?
+    - how are my travel details protected?
+
+- intent: out_of_scope
+  examples: |
+    - tell me a joke
+    - write my essay
+    - what is the stock market doing?
+    - order food for me
+    - book a hospital appointment
+
+- synonym: high
+  examples: |
+    - lowest carbon
+    - carbon reduction is very important
+    - environment first
+
+- synonym: medium
+  examples: |
+    - balanced
+    - moderate
+
+- synonym: low
+  examples: |
+    - price first
+    - cheap
+    - low cost
+
+- synonym: public_transport
+  examples: |
+    - bus
+    - metro
+    - tram
+    - subway

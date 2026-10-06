@@ -1,0 +1,66 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #14211a;
+  background: #eef5ef;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+.app-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: center;
+}
+.hero {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 20px 45px rgba(20, 33, 26, 0.12);
+}
+.eyebrow { text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.8rem; color: #407a52; font-weight: 700; }
+h1 { font-size: clamp(2.3rem, 8vw, 4.5rem); line-height: 0.95; margin: 0.5rem 0 1rem; }
+.chat-panel {
+  background: #ffffff;
+  border-radius: 24px;
+  min-height: 720px;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(20, 33, 26, 0.14);
+}
+.messages { padding: 1.25rem; overflow-y: auto; display: flex; flex-direction: column; gap: 1rem; }
+.message { max-width: 88%; border-radius: 18px; padding: 0.9rem 1rem; line-height: 1.45; }
+.message p { margin: 0.35rem 0; }
+.message.bot { background: #f1f7f3; align-self: flex-start; }
+.message.user { background: #1b6d3a; color: #fff; align-self: flex-end; }
+.message.error { background: #fff2f0; border: 1px solid #efb1a8; }
+.quick-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.7rem; }
+button { cursor: pointer; border: 0; border-radius: 999px; padding: 0.7rem 1rem; font-weight: 700; background: #dff2e4; color: #164326; }
+button:hover, button:focus { outline: 3px solid #9fd7af; }
+.chat-form { display: grid; grid-template-columns: 1fr auto; gap: 0.75rem; padding: 1rem; border-top: 1px solid #dce8df; }
+input { border: 1px solid #b6c9bd; border-radius: 999px; padding: 0.9rem 1rem; font: inherit; }
+.chat-form button { background: #1b6d3a; color: white; }
+.card, .handover {
+  margin-top: 0.75rem;
+  border-radius: 18px;
+  padding: 1rem;
+  border: 1px solid #dce8df;
+  background: #fff;
+}
+.card.green { border-left: 8px solid #1b8a4b; }
+.card.amber { border-left: 8px solid #d89218; }
+.card.red { border-left: 8px solid #c6402d; }
+.card h3, .handover h3 { margin: 0 0 0.35rem; }
+.subtitle, .small { color: #55665b; font-size: 0.92rem; }
+ul { list-style: none; padding: 0; margin: 0.75rem 0; display: grid; gap: 0.45rem; }
+li { display: flex; justify-content: space-between; gap: 1rem; border-bottom: 1px dashed #dce8df; padding-bottom: 0.35rem; }
+.handover { border-left: 8px solid #3d5afe; background: #f5f7ff; }
+.sr-only { position: absolute; left: -9999px; }
+@media (max-width: 900px) {
+  .app-shell { grid-template-columns: 1fr; padding: 1rem; }
+  .chat-panel { min-height: 650px; }
+}

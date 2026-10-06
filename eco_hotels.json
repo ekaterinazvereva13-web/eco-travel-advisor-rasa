@@ -1,0 +1,95 @@
+[
+  {
+    "name": "GreenStay Berlin Mitte",
+    "city": "Berlin",
+    "price_level": "mid-range",
+    "carbon_band": "green",
+    "certification": "EU Ecolabel style criteria",
+    "tags": [
+      "eco-certified",
+      "renewable energy",
+      "rail access",
+      "bike rental"
+    ],
+    "description": "Uses renewable electricity, offers bike rental and is close to rail/public transport links."
+  },
+  {
+    "name": "Circular Hostel Kreuzberg",
+    "city": "Berlin",
+    "price_level": "budget",
+    "carbon_band": "green",
+    "certification": "Local sustainability pledge",
+    "tags": [
+      "zero waste",
+      "public transport",
+      "recycling",
+      "local food"
+    ],
+    "description": "Budget-focused stay with waste reduction, local sourcing and strong public transport access."
+  },
+  {
+    "name": "Business Eco Suites Berlin",
+    "city": "Berlin",
+    "price_level": "premium",
+    "carbon_band": "amber",
+    "certification": "Green Key style criteria",
+    "tags": [
+      "renewable energy",
+      "local food",
+      "recycling"
+    ],
+    "description": "Higher-cost business option with sustainability practices but larger room footprint."
+  },
+  {
+    "name": "Barcelona Solar Boutique",
+    "city": "Barcelona",
+    "price_level": "mid-range",
+    "carbon_band": "green",
+    "certification": "Green Key style criteria",
+    "tags": [
+      "renewable energy",
+      "local community",
+      "public transport"
+    ],
+    "description": "Boutique accommodation with solar energy and community partnership tours."
+  },
+  {
+    "name": "Gothic Quarter Eco Rooms",
+    "city": "Barcelona",
+    "price_level": "budget",
+    "carbon_band": "amber",
+    "certification": "Self-declared with published policy",
+    "tags": [
+      "public transport",
+      "recycling",
+      "walking tour"
+    ],
+    "description": "Lower-cost central stay; good for walking access but certification is less formal."
+  },
+  {
+    "name": "Lisbon Low Impact Lodge",
+    "city": "Lisbon",
+    "price_level": "mid-range",
+    "carbon_band": "green",
+    "certification": "EU Ecolabel style criteria",
+    "tags": [
+      "eco-certified",
+      "renewable energy",
+      "local food"
+    ],
+    "description": "Prioritises energy efficiency, local suppliers and low-waste breakfast options."
+  },
+  {
+    "name": "Edinburgh Heritage Green Inn",
+    "city": "Edinburgh",
+    "price_level": "mid-range",
+    "carbon_band": "green",
+    "certification": "Green Tourism style criteria",
+    "tags": [
+      "local community",
+      "rail access",
+      "recycling"
+    ],
+    "description": "Heritage accommodation close to rail routes, supporting local suppliers and cultural heritage."
+  }
+]
